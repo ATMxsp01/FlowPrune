@@ -1,0 +1,95 @@
+result_root_dir: #..path to save results
+attention_info_dir: #..path to attention graph infomation.
+
+attention_head_list: [0]
+
+save_id: -1
+task_name: 'random-ij-pairs'
+
+pool_size: 100 
+
+ij_selector_info: 
+  selector: 'rand_ij'
+  args:
+    maxtot: 500
+
+
+settings:
+  - ["Origin", 'do_nothing', {}]
+  - ["Cut-edge_threshold1e-8", 'cut_threshold', {threshold : 1e-8}]
+  - ["Cut-edge_threshold1e-6", 'cut_threshold', {threshold : 1e-6}]
+  - ["Compact-to-4-layer_threshold0", 'compact_to_four_layers', {threshold: 0}]
+  - ["Compact-to-4-layer_threshold1e-8", 'compact_to_four_layers', {threshold: 1e-8}]
+  - ["Compact-to-4-layer_threshold1e-6", 'compact_to_four_layers', {threshold: 1e-6}]
+  
+  - ["Compact-to-80per_threshold0_0", 'compact_with_heuristic_tactic_0', {threshold: 0, retain_rate: 0.80, trying_times: 20}]
+  - ["Compact-to-75per_threshold0_0", 'compact_with_heuristic_tactic_0', {threshold: 0, retain_rate: 0.75, trying_times: 20}]
+  - ["Compact-to-50per_threshold0_0", 'compact_with_heuristic_tactic_0', {threshold: 0, retain_rate: 0.50, trying_times: 20}]
+  - ["Compact-to-30per_threshold0_0", 'compact_with_heuristic_tactic_0', {threshold: 0, retain_rate: 0.30, trying_times: 20}]
+  - ["Compact-to-25per_threshold0_0", 'compact_with_heuristic_tactic_0', {threshold: 0, retain_rate: 0.25, trying_times: 20}]
+
+  - ["Compact-to-80per_threshold1e-8_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-8, retain_rate: 0.80, trying_times: 20}]
+  - ["Compact-to-75per_threshold1e-8_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-8, retain_rate: 0.75, trying_times: 20}]
+  - ["Compact-to-50per_threshold1e-8_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-8, retain_rate: 0.50, trying_times: 20}]
+  - ["Compact-to-30per_threshold1e-8_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-8, retain_rate: 0.30, trying_times: 20}]
+  - ["Compact-to-25per_threshold1e-8_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-8, retain_rate: 0.25, trying_times: 20}]
+
+  - ["Compact-to-80per_threshold1e-6_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-6, retain_rate: 0.80, trying_times: 20}]
+  - ["Compact-to-75per_threshold1e-6_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-6, retain_rate: 0.75, trying_times: 20}]
+  - ["Compact-to-50per_threshold1e-6_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-6, retain_rate: 0.50, trying_times: 20}]
+  - ["Compact-to-30per_threshold1e-6_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-6, retain_rate: 0.30, trying_times: 20}]
+  - ["Compact-to-25per_threshold1e-6_0", 'compact_with_heuristic_tactic_0', {threshold: 1e-6, retain_rate: 0.25, trying_times: 20}]
+
+  - ["Compact-to-80per_threshold0_1", 'compact_with_heuristic_tactic_1', {threshold: 0, retain_rate: 0.80, trying_times: 10}]
+  - ["Compact-to-75per_threshold0_1", 'compact_with_heuristic_tactic_1', {threshold: 0, retain_rate: 0.75, trying_times: 10}]
+  - ["Compact-to-50per_threshold0_1", 'compact_with_heuristic_tactic_1', {threshold: 0, retain_rate: 0.50, trying_times: 10}]
+  - ["Compact-to-30per_threshold0_1", 'compact_with_heuristic_tactic_1', {threshold: 0, retain_rate: 0.30, trying_times: 10}]
+  - ["Compact-to-25per_threshold0_1", 'compact_with_heuristic_tactic_1', {threshold: 0, retain_rate: 0.25, trying_times: 10}]
+
+  - ["Compact-to-80per_threshold1e-8_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-8, retain_rate: 0.80, trying_times: 10}]
+  - ["Compact-to-75per_threshold1e-8_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-8, retain_rate: 0.75, trying_times: 10}]
+  - ["Compact-to-50per_threshold1e-8_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-8, retain_rate: 0.50, trying_times: 10}]
+  - ["Compact-to-30per_threshold1e-8_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-8, retain_rate: 0.30, trying_times: 10}]
+  - ["Compact-to-25per_threshold1e-8_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-8, retain_rate: 0.25, trying_times: 10}]
+
+  - ["Compact-to-80per_threshold1e-6_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-6, retain_rate: 0.80, trying_times: 10}]
+  - ["Compact-to-75per_threshold1e-6_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-6, retain_rate: 0.75, trying_times: 10}]
+  - ["Compact-to-50per_threshold1e-6_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-6, retain_rate: 0.50, trying_times: 10}]
+  - ["Compact-to-30per_threshold1e-6_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-6, retain_rate: 0.30, trying_times: 10}]
+  - ["Compact-to-25per_threshold1e-6_1", 'compact_with_heuristic_tactic_1', {threshold: 1e-6, retain_rate: 0.25, trying_times: 10}]
+
+  - ["Compact-to-80per_threshold0_2", 'compact_with_heuristic_tactic_2', {threshold: 0, retain_rate: 0.80, trying_times: 5}]
+  - ["Compact-to-75per_threshold0_2", 'compact_with_heuristic_tactic_2', {threshold: 0, retain_rate: 0.75, trying_times: 5}]
+  - ["Compact-to-50per_threshold0_2", 'compact_with_heuristic_tactic_2', {threshold: 0, retain_rate: 0.50, trying_times: 5}]
+  - ["Compact-to-30per_threshold0_2", 'compact_with_heuristic_tactic_2', {threshold: 0, retain_rate: 0.30, trying_times: 5}]
+  - ["Compact-to-25per_threshold0_2", 'compact_with_heuristic_tactic_2', {threshold: 0, retain_rate: 0.25, trying_times: 5}]
+
+  - ["Compact-to-80per_threshold1e-8_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-8, retain_rate: 0.80, trying_times: 5}]
+  - ["Compact-to-75per_threshold1e-8_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-8, retain_rate: 0.75, trying_times: 5}]
+  - ["Compact-to-50per_threshold1e-8_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-8, retain_rate: 0.50, trying_times: 5}]
+  - ["Compact-to-30per_threshold1e-8_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-8, retain_rate: 0.30, trying_times: 5}]
+  - ["Compact-to-25per_threshold1e-8_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-8, retain_rate: 0.25, trying_times: 5}]
+
+  - ["Compact-to-80per_threshold1e-6_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-6, retain_rate: 0.80, trying_times: 5}]
+  - ["Compact-to-75per_threshold1e-6_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-6, retain_rate: 0.75, trying_times: 5}]
+  - ["Compact-to-50per_threshold1e-6_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-6, retain_rate: 0.50, trying_times: 5}]
+  - ["Compact-to-30per_threshold1e-6_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-6, retain_rate: 0.30, trying_times: 5}]
+  - ["Compact-to-25per_threshold1e-6_2", 'compact_with_heuristic_tactic_2', {threshold: 1e-6, retain_rate: 0.25, trying_times: 5}]
+  
+  - ["Compact-to-80per_threshold0_3", 'compact_with_heuristic_tactic_3', {threshold: 0, high_threshold: 1e-4, retain_rate: 0.80}]
+  - ["Compact-to-75per_threshold0_3", 'compact_with_heuristic_tactic_3', {threshold: 0, high_threshold: 1e-4, retain_rate: 0.75}]
+  - ["Compact-to-50per_threshold0_3", 'compact_with_heuristic_tactic_3', {threshold: 0, high_threshold: 1e-4, retain_rate: 0.50}]
+  - ["Compact-to-30per_threshold0_3", 'compact_with_heuristic_tactic_3', {threshold: 0, high_threshold: 1e-4, retain_rate: 0.30}]
+  - ["Compact-to-25per_threshold0_3", 'compact_with_heuristic_tactic_3', {threshold: 0, high_threshold: 1e-4, retain_rate: 0.25}]
+
+  - ["Compact-to-80per_threshold1e-8_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-8, high_threshold: 1e-4, retain_rate: 0.80}]
+  - ["Compact-to-75per_threshold1e-8_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-8, high_threshold: 1e-4, retain_rate: 0.75}]
+  - ["Compact-to-50per_threshold1e-8_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-8, high_threshold: 1e-4, retain_rate: 0.50}]
+  - ["Compact-to-30per_threshold1e-8_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-8, high_threshold: 1e-4, retain_rate: 0.30}]
+  - ["Compact-to-25per_threshold1e-8_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-8, high_threshold: 1e-4, retain_rate: 0.25}]
+
+  - ["Compact-to-80per_threshold1e-6_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-6, high_threshold: 1e-4, retain_rate: 0.80}]
+  - ["Compact-to-75per_threshold1e-6_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-6, high_threshold: 1e-4, retain_rate: 0.75}]
+  - ["Compact-to-50per_threshold1e-6_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-6, high_threshold: 1e-4, retain_rate: 0.50}]
+  - ["Compact-to-30per_threshold1e-6_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-6, high_threshold: 1e-4, retain_rate: 0.30}]
+  - ["Compact-to-25per_threshold1e-6_3", 'compact_with_heuristic_tactic_3', {threshold: 1e-6, high_threshold: 1e-4, retain_rate: 0.25}]
